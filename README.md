@@ -108,4 +108,7 @@ src/
 
 ---
 
-![Preview](https://via.placeholder.com/800x400?text=Weatherly+Preview) *← Replace with actual screenshot*
+<img width="1367" height="872" alt="image" src="https://github.com/user-attachments/assets/6b3c0149-b889-4131-a71d-20e674115e05" />
+
+<img width="878" height="648" alt="image" src="https://github.com/user-attachments/assets/8aa76e15-2660-47a8-b9cb-7118cf85835f" />
+
