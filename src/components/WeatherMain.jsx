@@ -16,7 +16,7 @@ function StatCard({ icon, label, value, sub }) {
 function WindCompass({ deg, speed, dir }) {
   return (
     <div className="glass rounded-2xl p-4 flex flex-col gap-3">
-      <div className="flex items-center gap-2 text-slate-fog text-xs font-inter uppercase tracking-wider">
+      <div className="flex items-center gap-2 text-slate-400 text-xs font-inter uppercase tracking-wider">
         <span>🧭</span>
         <span>Viento</span>
       </div>
@@ -64,7 +64,7 @@ export default function WeatherMain({ weather }) {
   const uv = uvLabel(current.uvIndex)
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 ">
       {/* Hero temp block */}
       <div className="text-center space-y-2 py-4">
         <div className="text-7xl animate-float select-none">{condition.icon}</div>
@@ -72,10 +72,10 @@ export default function WeatherMain({ weather }) {
           {current.temp}°
         </div>
         <div className="text-cyan-soft font-inter text-lg font-light">{condition.label}</div>
-        <div className="text-slate-fog font-inter text-sm">
+        <div className="text-slate-400 font-inter text-sm">
           Sensación térmica <span className="text-cyan-pale font-medium">{current.feelsLike}°C</span>
         </div>
-        <div className="text-slate-fog font-inter text-xs">
+        <div className="text-slate-400 font-inter text-xs">
           Máx {today.maxTemp}° · Mín {today.minTemp}°
         </div>
       </div>
@@ -84,7 +84,7 @@ export default function WeatherMain({ weather }) {
       <div className="glass-strong rounded-2xl p-5 flex items-center justify-around">
         <div className="text-center space-y-1">
           <div className="text-2xl">🌅</div>
-          <div className="text-slate-fog text-xs uppercase tracking-wider font-inter">Amanecer</div>
+          <div className="text-slate-400 text-xs uppercase tracking-wider font-inter">Amanecer</div>
           <div className="text-cyan-pale font-inter font-semibold text-lg">{formatTime(today.sunrise)}</div>
         </div>
         {/* Timeline */}
@@ -108,7 +108,7 @@ export default function WeatherMain({ weather }) {
         </div>
         <div className="text-center space-y-1">
           <div className="text-2xl">🌇</div>
-          <div className="text-slate-fog text-xs uppercase tracking-wider font-inter">Atardecer</div>
+          <div className="text-slate-400 text-xs uppercase tracking-wider font-inter">Atardecer</div>
           <div className="text-cyan-pale font-inter font-semibold text-lg">{formatTime(today.sunset)}</div>
         </div>
       </div>
@@ -119,7 +119,7 @@ export default function WeatherMain({ weather }) {
         <StatCard icon="🌡️" label="Presión" value={`${current.pressure}`} sub="hPa" />
         <StatCard icon="👁️" label="Visibilidad" value={`${current.visibility} km`} sub={current.visibility > 10 ? 'Excelente' : current.visibility > 5 ? 'Buena' : 'Reducida'} />
         <div className="glass rounded-2xl p-4 flex flex-col gap-2">
-          <div className="flex items-center gap-2 text-slate-fog text-xs font-inter uppercase tracking-wider">
+          <div className="flex items-center gap-2 text-slate-400 text-xs font-inter uppercase tracking-wider">
             <span>☀️</span>
             <span>Índice UV</span>
           </div>

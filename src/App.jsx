@@ -84,15 +84,12 @@ export default function App() {
 
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-cyan-glow/20 border border-cyan-glow/30 flex items-center justify-center text-sm">
-              🌐
-            </div>
-            <span className="font-syne font-700 text-cyan-pale text-lg tracking-tight">Weatherly</span>
+            <h1 className="font-syne font-700 text-cyan-pale text-2xl tracking-tight">Weatherly</h1>
           </div>
           {weather && (
             <div className="text-right">
               <div className="text-cyan-pale font-syne font-600 text-sm">{weather.city}</div>
-              <div className="text-slate-fog font-inter text-xs">{weather.country} · {weather.updatedAt}</div>
+              <div className="text-slate-400 font-inter text-xs">{weather.country} · {weather.updatedAt}</div>
             </div>
           )}
         </div>
@@ -105,7 +102,7 @@ export default function App() {
         />
 
         {weather && !loading && (
-          <div className="text-center text-slate-fog text-xs font-inter capitalize">
+          <div className="text-center text-slate-400 text-xs font-inter capitalize">
             {formatDay(weather.daily[0].date)}
           </div>
         )}
@@ -116,7 +113,7 @@ export default function App() {
           <div className="glass-strong rounded-2xl p-8 text-center space-y-3">
             <div className="text-4xl">⚠️</div>
             <div className="text-cyan-pale font-inter font-medium">No se pudo obtener el clima</div>
-            <div className="text-slate-fog font-inter text-sm">{error}</div>
+            <div className="text-slate-400 font-inter text-sm">{error}</div>
             <button onClick={() => fetchWeather('Bogotá')} className="mt-2 text-cyan-glow text-sm font-inter hover:underline">
               Ver Bogotá
             </button>
