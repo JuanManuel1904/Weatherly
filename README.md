@@ -1,6 +1,8 @@
 # 🌐 Weatherly - Weather App
 *A sleek real-time weather application built with React, JavaScript, and Tailwind CSS.*
 
+**Deployed** https://weatherly-one-sigma.vercel.app/
+
 ---
 
 ## ✨ Features
