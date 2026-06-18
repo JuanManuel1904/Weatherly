@@ -132,21 +132,7 @@ export default function App() {
         )}
 
         <div className="text-center pt-4 pb-2 space-y-1">
-          <p className="text-slate-fog text-xs font-inter">
-            Datos por{' '}
-            <a href="https://open-meteo.com" target="_blank" rel="noopener noreferrer" className="text-cyan-glow/70 hover:text-cyan-glow transition-colors">
-              Open-Meteo
-            </a>
-            {' '}· Gratis y sin API key 🙌
-          </p>
-          {photo?.url && (
-            <p className="text-slate-fog/50 text-xs font-inter">
-              📷 Foto:{' '}
-              <a href="https://commons.wikimedia.org" target="_blank" rel="noopener noreferrer" className="hover:text-slate-fog transition-colors">
-                Wikimedia Commons
-              </a>
-            </p>
-          )}
+
           {photoLoading && (
             <p className="text-slate-fog/40 text-xs font-inter animate-pulse">Buscando foto de la ciudad…</p>
           )}
