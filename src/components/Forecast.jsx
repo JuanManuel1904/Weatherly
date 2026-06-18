@@ -25,7 +25,7 @@ export function HourlyForecast({ hourly }) {
             >
               <div className="text-slate-fog text-center leading-none">
                 <span className="text-sm font-inter font-medium text-cyan-pale block">{num}</span>
-                <span className="text-[10px] font-inter">{period}</span>
+                <span className="text-[10px] font-inter text-cyan-pale/60">{period}</span>
               </div>
               <div className="text-xl">{/* WMO icon */}
                 {h.code <= 1 ? '☀️' : h.code <= 3 ? '⛅' : h.code <= 55 ? '🌦️' : h.code <= 65 ? '🌧️' : h.code <= 75 ? '❄️' : '⛈️'}
@@ -57,7 +57,7 @@ export function DailyForecast({ daily }) {
               }`}
             >
               {/* Day */}
-              <div className="w-14 text-xs font-inter text-slate-fog capitalize">
+              <div className="w-14 text-xs font-inter text-cyan-pale/70 capitalize">
                 {today ? <span className="text-cyan-glow font-semibold">Hoy</span> : formatDay(day.date, true)}
               </div>
               {/* Icon */}
@@ -72,10 +72,10 @@ export function DailyForecast({ daily }) {
                 </div>
               </div>
               {/* Condition label */}
-              <div className="hidden md:block text-slate-fog text-xs font-inter flex-1 truncate">{day.condition.label}</div>
+              <div className="hidden md:block text-cyan-pale/70 text-xs font-inter flex-1 truncate">{day.condition.label}</div>
               {/* Temps */}
               <div className="flex items-center gap-3 ml-auto text-sm font-inter">
-                <span className="text-slate-fog">{day.minTemp}°</span>
+                <span className="text-cyan-pale/70">{day.minTemp}°</span>
                 {/* Temp range bar */}
                 <div className="w-16 h-1.5 bg-navy-600 rounded-full overflow-hidden hidden sm:block">
                   <div className="h-full bg-gradient-to-r from-blue-400 via-cyan-glow to-orange-300 rounded-full opacity-80" />

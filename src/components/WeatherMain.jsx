@@ -3,12 +3,12 @@ import { formatTime, uvLabel, windLabel } from '../utils/helpers'
 function StatCard({ icon, label, value, sub }) {
   return (
     <div className="glass rounded-2xl p-4 flex flex-col gap-2">
-      <div className="flex items-center gap-2 text-slate-fog text-xs font-inter uppercase tracking-wider">
+      <div className="flex items-center gap-2 text-cyan-pale/60 text-xs font-inter uppercase tracking-wider">
         <span>{icon}</span>
         <span>{label}</span>
       </div>
       <div className="text-cyan-pale font-inter font-semibold text-xl leading-none">{value}</div>
-      {sub && <div className="text-slate-fog text-xs font-inter">{sub}</div>}
+      {sub && <div className="text-cyan-pale/70 text-xs font-inter">{sub}</div>}
     </div>
   )
 }
@@ -23,7 +23,7 @@ function WindCompass({ deg, speed, dir }) {
       <div className="flex items-center justify-between">
         <div>
           <div className="text-cyan-pale font-inter font-semibold text-xl leading-none">{speed} km/h</div>
-          <div className="text-slate-fog text-xs mt-1">{windLabel(speed)}</div>
+          <div className="text-cyan-pale/70 text-xs mt-1">{windLabel(speed)}</div>
         </div>
         {/* Mini compass */}
         <div className="relative w-14 h-14">

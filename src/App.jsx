@@ -8,12 +8,12 @@ import { LoadingSkeleton, EmptyState } from './components/States'
 import { formatDay } from './utils/helpers'
 
 const OVERLAY_THEMES = {
-  day:    'bg-navy-800/40',
-  night:  'bg-navy-900/70',
-  rain:   'bg-navy-800/60',
-  cloudy: 'bg-navy-800/50',
-  storm:  'bg-navy-900/75',
-  snow:   'bg-navy-800/50',
+  day:    'bg-navy-900/50',
+  night:  'bg-navy-900/75',
+  rain:   'bg-navy-900/65',
+  cloudy: 'bg-navy-900/60',
+  storm:  'bg-navy-900/80',
+  snow:   'bg-navy-900/60',
 }
 
 const FALLBACK_THEMES = {
